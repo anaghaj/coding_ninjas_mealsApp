@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Meals App</title>
+    <link rel="stylesheet" href="meals.css" />
+    <script src="https://kit.fontawesome.com/e6f12e5790.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="navigationBar">
+        <a href="index.html">
+            <div class="topLogo">
+                <i class="fa fa-home"></i>
+                <h6>Home</h6>
+            </div>
+        </a>
+
+        <div class="sideBar">
+
+            <div id="toggleSideBar">
+                <i class="fa-solid fa-bars"></i>
+                <span id="counter">0</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="main">
+
+        <div id="rightSideBar">
+            <div class="topGap"></div>
+            <hr />
+            <div class="title small">
+                <i class="fa fa-heart"></i> Favourites
+            </div>
+            <hr />
+            <div id="fav">
+                <!-- favoruites details will be added in js -->
+
+            </div>
+
+        </div>
+        <div id="flexBox">
+
+            <div class="container">
+
+                <div class="header">
+                    <div class="title">
+                        <h3>MEALS APP</h3>
+                        <h4>Let's Eat Something</h4>
+                    </div>
+                </div>
+                <div class="" id="searchBar">
+                    <div class="icon">
+                        <i class="fa-solid fa-search "></i>
+                    </div>
+                    <div class="newSearchInput">
+                        <form onkeyup="mealList()">
+                            <input id="searchInput" type="text" placeholder="Search" />
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div id="cardsHolder" class="">
+                <!-- will be added from js -->
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <script src="meals.js"></script>
+</body>
+
+</html>
